@@ -1,0 +1,81 @@
+.vc-asset-vault-btn {
+    color: var(--interactive-normal);
+}
+
+.vc-asset-vault-btn:hover {
+    color: var(--interactive-hover);
+}
+
+.vc-asset-vault-popout {
+    width: 380px;
+    height: 550px;
+    background-color: var(--background-floating);
+    border-radius: 8px;
+    box-shadow: var(--elevation-high);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.vc-asset-vault-header {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+}
+
+.vc-asset-vault-search {
+    margin-bottom: 12px;
+}
+
+.vc-asset-vault-content {
+    overflow-y: auto;
+    flex: 1;
+}
+
+.vc-asset-vault-empty {
+    padding: 20px;
+    text-align: center;
+}
+
+.vc-asset-vault-section {
+    margin-bottom: 16px;
+}
+
+.vc-asset-vault-section-title {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.vc-asset-vault-item {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: var(--background-secondary);
+    margin-bottom: 4px;
+    word-break: break-all;
+}
+
+.vc-asset-vault-item:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.vc-asset-vault-link {
+    color: var(--text-link);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.vc-asset-vault-link:hover {
+    text-decoration: underline;
+}
+
+.vc-asset-vault-code {
+    white-space: pre-wrap;
+    font-family: var(--font-code);
+    font-size: 12px;
+    color: var(--text-normal);
+}
+
+.vc-asset-vault-code-item {
+    background-color: var(--background-tertiary);
+}
