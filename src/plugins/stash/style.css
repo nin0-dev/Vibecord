@@ -1,0 +1,95 @@
+.vc-stash-popout {
+    width: 320px;
+    max-height: 500px;
+    background: var(--background-floating);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--elevation-high);
+    overflow: hidden;
+}
+
+.vc-stash-popout-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+}
+
+.vc-stash-clear-all {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    color: var(--text-muted);
+}
+
+.vc-stash-clear-all:hover {
+    color: var(--text-danger);
+}
+
+.vc-stash-list {
+    flex: 1;
+    padding: 8px;
+}
+
+.vc-stash-empty {
+    padding: 24px;
+}
+
+.vc-stash-item {
+    background: var(--background-secondary);
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 8px;
+    position: relative;
+    border-left: 3px solid var(--brand-experiment);
+}
+
+.vc-stash-item:hover {
+    background: var(--background-secondary-alt);
+}
+
+.vc-stash-item-info {
+    margin-bottom: 4px;
+}
+
+.vc-stash-item-content {
+    cursor: pointer;
+}
+
+.vc-stash-item-text {
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.vc-stash-item-image {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+.vc-stash-item-actions {
+    margin-top: 8px;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.vc-stash-item:hover .vc-stash-item-actions {
+    opacity: 1;
+}
+
+.vc-stash-item-action {
+    cursor: pointer;
+    color: var(--interactive-normal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vc-stash-item-action:hover {
+    color: var(--interactive-hover);
+}
+
+.vc-stash-btn svg {
+    margin-top: 2px;
+}
