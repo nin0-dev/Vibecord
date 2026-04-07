@@ -1,0 +1,109 @@
+.vc-quilt-popout {
+    width: 320px;
+    max-height: 500px;
+    background-color: var(--background-floating);
+    border-radius: 8px;
+    box-shadow: var(--elevation-high);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.vc-quilt-header {
+    padding: 12px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vc-quilt-items {
+    padding: 8px;
+}
+
+.vc-quilt-item {
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    background-color: var(--background-secondary);
+    transition: background-color 0.2s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.vc-quilt-item:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.vc-quilt-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vc-quilt-item-author {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--header-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+}
+
+.vc-quilt-item-origin {
+    font-size: 11px;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vc-quilt-item-content {
+    font-size: 13px;
+    color: var(--text-normal);
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.vc-quilt-item-actions {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: none;
+}
+
+.vc-quilt-item:hover .vc-quilt-item-actions {
+    display: flex;
+}
+
+.vc-quilt-empty {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.vc-quilt-item-badge {
+    font-size: 10px;
+    background-color: var(--brand-experiment);
+    color: white;
+    padding: 1px 4px;
+    border-radius: 3px;
+    margin-left: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.vc-quilt-icon {
+    color: var(--interactive-normal);
+}
+
+.vc-quilt-icon:hover, .vc-quilt-btn.selected .vc-quilt-icon {
+    color: var(--interactive-active);
+}
