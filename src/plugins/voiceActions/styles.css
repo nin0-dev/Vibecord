@@ -1,0 +1,19 @@
+.vc-va-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--interactive-normal);
+    transition: color 0.2s;
+}
+
+.vc-va-button:hover {
+    color: var(--interactive-hover);
+}
+
+.vc-va-container {
+    display: flex;
+    gap: 4px;
+    margin-left: 8px;
+    align-items: center;
+}
