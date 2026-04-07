@@ -1,0 +1,81 @@
+.vc-waypoints-popout {
+    width: 320px;
+    max-height: 480px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color: var(--background-floating);
+    border-radius: 8px;
+    box-shadow: var(--elevation-high);
+}
+
+.vc-waypoints-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    margin-bottom: 8px;
+}
+
+.vc-waypoints-title {
+    font-weight: 600;
+    color: var(--header-primary);
+    font-size: 16px;
+}
+
+.vc-waypoints-list {
+    overflow-y: auto;
+    flex: 1;
+}
+
+.vc-waypoints-item {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 4px;
+}
+
+.vc-waypoints-item:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.vc-waypoints-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.vc-waypoints-item-author {
+    font-weight: 600;
+    color: var(--header-secondary);
+    font-size: 14px;
+}
+
+.vc-waypoints-item-content {
+    color: var(--text-normal);
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vc-waypoints-item-remove {
+    opacity: 0;
+    transition: opacity 0.2s;
+    color: var(--text-danger);
+}
+
+.vc-waypoints-item:hover .vc-waypoints-item-remove {
+    opacity: 1;
+}
+
+.vc-waypoints-empty {
+    padding: 16px;
+    text-align: center;
+    color: var(--text-muted);
+}

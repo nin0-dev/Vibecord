@@ -28,7 +28,7 @@ export function StashPopout({ close }: { close: () => void; }) {
 
     return (
         <div className="vc-stash-popout">
-            <Flex direction="horizontal" justify="between" align="center" className="vc-stash-popout-header">
+            <Flex flexDirection="row" justifyContent="space-between" alignItems="center" className="vc-stash-popout-header">
                 <Text variant="heading-md/bold">Stash</Text>
                 {items.length > 0 && (
                     <div className="vc-stash-clear-all" onClick={() => clearStash()}>
@@ -39,7 +39,7 @@ export function StashPopout({ close }: { close: () => void; }) {
             </Flex>
             <ScrollerThin className="vc-stash-list">
                 {items.length === 0 ? (
-                    <Flex justify="center" align="center" className="vc-stash-empty">
+                    <Flex justifyContent="center" alignItems="center" className="vc-stash-empty">
                         <Text variant="text-sm/medium" color="text-muted">Your stash is empty</Text>
                     </Flex>
                 ) : (
@@ -64,7 +64,7 @@ function StashItemCard({ item, close }: { item: StashItem; close: () => void; })
 
     return (
         <div className="vc-stash-item">
-            <Flex direction="horizontal" justify="between" align="center" className="vc-stash-item-info">
+            <Flex flexDirection="row" justifyContent="space-between" alignItems="center" className="vc-stash-item-info">
                 <Text variant="text-xs/bold" color="header-secondary">
                     {item.author || "Unknown"}
                 </Text>
@@ -81,7 +81,7 @@ function StashItemCard({ item, close }: { item: StashItem; close: () => void; })
                     </Text>
                 )}
             </div>
-            <Flex direction="horizontal" gap="8px" className="vc-stash-item-actions">
+            <Flex flexDirection="row" gap="8px" className="vc-stash-item-actions">
                 <div className="vc-stash-item-action" onClick={handleCopy} title="Copy">
                     <CopyIcon width={14} height={14} />
                 </div>
