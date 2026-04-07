@@ -116,7 +116,7 @@ const imageContextMenuPatch: NavContextMenuPatchCallback = (children, props) => 
 export default definePlugin({
     name: "Stash",
     description: "A temporary buffer for messages, links, and images. Access it from the header bar.",
-    authors: [Devs.nin0.dev],
+    authors: [Devs.nin0dev],
     settings,
 
     patches: [

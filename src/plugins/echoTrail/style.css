@@ -1,0 +1,101 @@
+/*
+ * Vencord, a modification for Discord's desktop app
+ * Copyright (c) 2024 Devs.nin0.dev and contributors
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+.vc-echo-trail-popout {
+    background-color: var(--background-secondary-alt);
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: var(--elevation-high);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.vc-echo-trail-header {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--background-modifier-accent);
+}
+
+.vc-echo-trail-clear {
+    cursor: pointer;
+    color: var(--interactive-normal);
+    opacity: 0.7;
+}
+
+.vc-echo-trail-clear:hover {
+    opacity: 1;
+    color: var(--status-danger);
+}
+
+.vc-echo-trail-tabs {
+    background-color: var(--background-secondary);
+    border-bottom: 1px solid var(--background-modifier-accent);
+}
+
+.vc-echo-trail-tab {
+    flex: 1;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--interactive-normal);
+    transition: background-color 0.1s;
+}
+
+.vc-echo-trail-tab:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--interactive-hover);
+}
+
+.vc-echo-trail-tab.active {
+    background-color: var(--background-modifier-selected);
+    color: var(--interactive-active);
+    border-bottom: 2px solid var(--interactive-active);
+}
+
+.vc-echo-trail-list {
+    flex: 1;
+    padding: 8px;
+}
+
+.vc-echo-trail-empty {
+    height: 100%;
+}
+
+.vc-echo-trail-item {
+    padding: 8px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--background-secondary);
+    transition: background-color 0.1s;
+}
+
+.vc-echo-trail-item:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.vc-echo-trail-item-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 2px;
+}
