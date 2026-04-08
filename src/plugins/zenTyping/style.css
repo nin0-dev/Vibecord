@@ -1,0 +1,22 @@
+/*
+  Targeting Discord's obfuscated classes using attribute selectors for better stability.
+  Guilds: nav[class*="guilds_"]
+  Sidebar: nav[class*="sidebar_"]
+  Members: aside[class*="membersWrap_"]
+  Header: [class*="title_"] (usually a section)
+*/
+
+[class*="guilds_"],
+[class*="sidebar_"],
+[class*="membersWrap_"],
+[class*="title_"] {
+    transition: opacity var(--vc-zen-duration, 0.3s) ease;
+}
+
+body.vc-zen-typing.vc-zen-fade-guilds [class*="guilds_"],
+body.vc-zen-typing.vc-zen-fade-sidebar [class*="sidebar_"],
+body.vc-zen-typing.vc-zen-fade-members [class*="membersWrap_"],
+body.vc-zen-typing.vc-zen-fade-header [class*="title_"] {
+    opacity: var(--vc-zen-opacity, 0.1);
+    pointer-events: none;
+}
