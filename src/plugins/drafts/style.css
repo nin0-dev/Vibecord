@@ -1,0 +1,57 @@
+.vc-drafts-popout {
+    width: 320px;
+    max-height: 480px;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    box-shadow: var(--elevation-high);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.vc-drafts-popout-header {
+    padding: 12px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+}
+
+.vc-drafts-list {
+    flex: 1;
+    max-height: 400px;
+}
+
+.vc-drafts-empty {
+    padding: 20px;
+}
+
+.vc-drafts-item {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.vc-drafts-item:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.vc-drafts-item-info {
+    margin-bottom: 4px;
+}
+
+.vc-drafts-item-text {
+    color: var(--text-normal);
+    overflow-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.vc-drafts-icon {
+    color: var(--interactive-normal);
+}
+
+.vc-drafts-btn:hover .vc-drafts-icon,
+.vc-drafts-btn.selected .vc-drafts-icon {
+    color: var(--interactive-active);
+}
