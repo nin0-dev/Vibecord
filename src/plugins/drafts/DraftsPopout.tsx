@@ -31,7 +31,7 @@ import {
     useStateFromStores
 } from "@webpack/common";
 
-const DraftManager = findByProps("clearDraft", "saveDraft");
+const DraftManager = findByPropsLazy("clearDraft", "saveDraft");
 
 export function DraftsPopout({ close }: { close: () => void; }) {
     const drafts = useStateFromStores([DraftStore], () => {
