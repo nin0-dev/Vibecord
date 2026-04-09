@@ -1,0 +1,41 @@
+.vc-breadcrumbs-container {
+    margin-right: 8px;
+    padding: 2px 6px;
+    background: var(--background-secondary-alt);
+    border-radius: 4px;
+    gap: 4px;
+}
+
+.vc-breadcrumb-item {
+    cursor: pointer;
+    gap: 4px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.vc-breadcrumb-item:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.vc-breadcrumb-item:hover .vc-breadcrumb-name {
+    color: var(--header-primary);
+}
+
+.vc-breadcrumb-icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.vc-breadcrumbs-separator {
+    opacity: 0.5;
+    user-select: none;
+}
+
+.vc-breadcrumb-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
