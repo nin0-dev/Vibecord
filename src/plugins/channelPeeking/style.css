@@ -1,0 +1,53 @@
+.vc-peek-popout {
+    width: 400px;
+    max-height: 500px;
+    background-color: var(--background-floating);
+    border-radius: 8px;
+    box-shadow: var(--elevation-high);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 8px 0;
+}
+
+.vc-peek-header {
+    padding: 0 16px 8px 16px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    margin-bottom: 8px;
+}
+
+.vc-peek-messages {
+    padding: 0 16px;
+}
+
+.vc-peek-message {
+    margin-bottom: 8px;
+}
+
+.vc-peek-author {
+    font-weight: 600;
+    margin-right: 8px;
+    color: var(--header-primary);
+}
+
+.vc-peek-content {
+    color: var(--text-normal);
+    word-break: break-word;
+}
+
+.vc-peek-timestamp {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.vc-peek-loading {
+    padding: 16px;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.vc-peek-empty {
+    padding: 16px;
+    text-align: center;
+    color: var(--text-muted);
+}
