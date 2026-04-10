@@ -18,7 +18,7 @@
 
 import { Flex } from "@components/Flex";
 import { DeleteIcon } from "@components/Icons";
-import { findByProps, findByPropsLazy } from "@webpack";
+import { findByPropsLazy } from "@webpack";
 import {
     ChannelRouter,
     ChannelStore,

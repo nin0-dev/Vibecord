@@ -1,0 +1,85 @@
+.vc-chronos-popout {
+    width: 300px;
+    background-color: var(--background-floating);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: var(--elevation-high);
+    color: var(--header-primary);
+}
+
+.vc-chronos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.vc-chronos-nav {
+    display: flex;
+    gap: 8px;
+}
+
+.vc-chronos-nav-btn {
+    cursor: pointer;
+    color: var(--interactive-normal);
+}
+
+.vc-chronos-nav-btn:hover {
+    color: var(--interactive-hover);
+}
+
+.vc-chronos-calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+}
+
+.vc-chronos-weekday {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.vc-chronos-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--interactive-normal);
+}
+
+.vc-chronos-day:hover {
+    background-color: var(--background-modifier-hover);
+    color: var(--interactive-hover);
+}
+
+.vc-chronos-day.outside {
+    color: var(--text-muted);
+    opacity: 0.3;
+}
+
+.vc-chronos-day.today {
+    background-color: var(--brand-experiment);
+    color: white;
+}
+
+.vc-chronos-day.today:hover {
+    background-color: var(--brand-experiment-560);
+}
+
+.vc-chronos-btn {
+    color: var(--interactive-normal);
+}
+
+.vc-chronos-btn:hover {
+    color: var(--interactive-hover);
+}
+
+.vc-chronos-btn.selected {
+    color: var(--interactive-active);
+}
