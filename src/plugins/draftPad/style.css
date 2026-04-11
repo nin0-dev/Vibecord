@@ -1,0 +1,129 @@
+.vc-draftpad-popout {
+    width: 450px;
+    height: 550px;
+    background-color: var(--background-floating);
+    border-radius: 8px;
+    box-shadow: var(--elevation-high);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.vc-draftpad-header {
+    padding: 12px;
+    background-color: var(--background-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--background-modifier-accent);
+}
+
+.vc-draftpad-tabs {
+    display: flex;
+    gap: 8px;
+    padding: 8px 12px;
+    background-color: var(--background-secondary);
+    border-bottom: 1px solid var(--background-modifier-accent);
+    overflow-x: auto;
+}
+
+.vc-draftpad-tabs::-webkit-scrollbar {
+    height: 4px;
+}
+
+.vc-draftpad-tab {
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--background-modifier-hover);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: var(--text-normal);
+}
+
+.vc-draftpad-tab.active {
+    background-color: var(--brand-experiment);
+    color: white;
+}
+
+.vc-draftpad-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.vc-draftpad-editor-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.vc-draftpad-editor {
+    flex: 1;
+    resize: none;
+    background: transparent;
+    border: none;
+    color: var(--text-normal);
+    font-family: var(--font-primary);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.vc-draftpad-editor:focus {
+    outline: none;
+}
+
+.vc-draftpad-preview {
+    border-top: 1px solid var(--background-modifier-accent);
+    max-height: 150px;
+    padding: 12px;
+    background-color: var(--background-secondary-alt);
+    overflow-y: auto;
+}
+
+.vc-draftpad-footer {
+    padding: 8px 12px;
+    background-color: var(--background-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--background-modifier-accent);
+}
+
+.vc-draftpad-footer-left {
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.vc-draftpad-footer-right {
+    display: flex;
+    gap: 8px;
+}
+
+.vc-draftpad-btn-icon {
+    cursor: pointer;
+    color: var(--interactive-normal);
+    display: flex;
+    align-items: center;
+}
+
+.vc-draftpad-btn-icon:hover {
+    color: var(--interactive-hover);
+}
+
+.vc-draftpad-btn-icon.danger:hover {
+    color: var(--status-danger);
+}
+
+.vc-draftpad-tab-name {
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
