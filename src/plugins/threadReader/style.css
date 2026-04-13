@@ -1,0 +1,66 @@
+.vc-thread-reader-popout {
+    width: 400px;
+    max-height: 80vh;
+    background-color: var(--background-floating);
+    border-radius: 8px;
+    box-shadow: var(--elevation-high);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.vc-thread-reader-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vc-thread-reader-scroller {
+    padding: 8px 0;
+}
+
+.vc-thread-reader-message {
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+}
+
+.vc-thread-reader-message:last-child {
+    border-bottom: none;
+}
+
+.vc-thread-reader-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.vc-thread-reader-author {
+    font-weight: 600;
+    color: var(--header-primary);
+}
+
+.vc-thread-reader-timestamp {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.vc-thread-reader-content {
+    color: var(--text-normal);
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.vc-thread-reader-empty {
+    padding: 32px;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.vc-thread-reader-btn.selected {
+    color: var(--interactive-active);
+}
