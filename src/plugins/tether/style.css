@@ -1,0 +1,89 @@
+.vc-tether-container {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    z-index: 100;
+    max-width: 300px;
+    pointer-events: none;
+}
+
+.vc-tether-card {
+    background-color: var(--background-floating);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: var(--elevation-high);
+    pointer-events: auto;
+    animation: vc-tether-slide-in 0.2s ease-out;
+}
+
+@keyframes vc-tether-slide-in {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.vc-tether-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--border-faint);
+    padding-bottom: 4px;
+}
+
+.vc-tether-author {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--header-primary);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vc-tether-actions {
+    display: flex;
+    gap: 4px;
+}
+
+.vc-tether-btn {
+    background: none;
+    border: none;
+    color: var(--interactive-normal);
+    cursor: pointer;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vc-tether-btn:hover {
+    color: var(--interactive-hover);
+    background-color: var(--background-modifier-hover);
+}
+
+.vc-tether-content {
+    font-size: 14px;
+    color: var(--text-normal);
+    cursor: pointer;
+    max-height: 100px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.vc-tether-content:hover {
+    color: var(--text-muted);
+}
