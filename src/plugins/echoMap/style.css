@@ -1,0 +1,73 @@
+.vc-echomap-container {
+    position: absolute;
+    right: 14px;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: 100;
+    transition: width 0.2s ease, background 0.2s ease, opacity 0.2s ease, right 0.2s ease;
+    border-radius: 4px;
+    overflow: hidden;
+    pointer-events: auto;
+    opacity: 0.3;
+}
+
+.vc-echomap-container:hover,
+.vc-echomap-container.hover-expand:hover {
+    background: rgba(0, 0, 0, 0.15);
+    opacity: 1;
+    right: 12px;
+}
+
+.vc-echomap-container.hover-expand:hover {
+    width: 32px !important;
+}
+
+.vc-echomap-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.vc-echomap-marker {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: transform 0.1s ease;
+}
+
+.vc-echomap-marker:hover {
+    transform: scaleY(2);
+    filter: brightness(1.2);
+    z-index: 101;
+}
+
+.vc-echomap-viewport {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 2px;
+    pointer-events: none;
+    z-index: 50;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Theme adjustments */
+.theme-light .vc-echomap-container {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.theme-light .vc-echomap-viewport {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure it doesn't overlap with the scrollbar too much or search results */
+[class*="messagesWrapper"] {
+    position: relative;
+}
