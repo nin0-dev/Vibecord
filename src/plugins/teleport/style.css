@@ -1,0 +1,93 @@
+.vc-teleport-popout {
+    width: 320px;
+    max-height: 500px;
+    background: var(--background-floating);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--elevation-high);
+    overflow: hidden;
+}
+
+.vc-teleport-popout-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+}
+
+.vc-teleport-clear-all {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color 0.2s;
+}
+
+.vc-teleport-clear-all:hover {
+    color: var(--text-danger);
+}
+
+.vc-teleport-list {
+    flex: 1;
+    padding: 8px;
+}
+
+.vc-teleport-empty {
+    padding: 24px;
+    text-align: center;
+}
+
+.vc-teleport-section-title {
+    margin: 8px 4px 4px;
+}
+
+.vc-teleport-item {
+    background: var(--background-secondary);
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 8px;
+    position: relative;
+    border-left: 3px solid var(--brand-experiment);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.vc-teleport-item:hover {
+    background: var(--background-secondary-alt);
+}
+
+.vc-teleport-item-info {
+    margin-bottom: 2px;
+}
+
+.vc-teleport-item-location {
+    margin-bottom: 6px;
+    font-style: italic;
+}
+
+.vc-teleport-item-text {
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    color: var(--text-normal);
+}
+
+.vc-teleport-item-remove {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    opacity: 0;
+    transition: opacity 0.2s, color 0.2s;
+    color: var(--interactive-normal);
+}
+
+.vc-teleport-item-remove:hover {
+    color: var(--text-danger);
+}
+
+.vc-teleport-item:hover .vc-teleport-item-remove {
+    opacity: 1;
+}
+
+.vc-teleport-btn.selected {
+    color: var(--brand-experiment);
+}
