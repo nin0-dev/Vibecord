@@ -1,0 +1,96 @@
+.vc-mirror-panel {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    max-height: 80vh;
+    background-color: var(--background-floating);
+    border-radius: 8px;
+    box-shadow: var(--elevation-high);
+    overflow: hidden;
+}
+
+.vc-mirror-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+}
+
+.vc-mirror-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--header-primary);
+}
+
+.vc-mirror-scroller {
+    padding: 12px;
+}
+
+.vc-mirror-empty-state {
+    padding: 20px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.vc-mirror-channel-section {
+    margin-bottom: 16px;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.vc-mirror-channel-header {
+    padding: 8px 12px;
+    background-color: var(--background-tertiary);
+    border-bottom: 1px solid var(--background-modifier-accent);
+}
+
+.vc-mirror-channel-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--interactive-active);
+}
+
+.vc-mirror-messages {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.vc-mirror-message {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.vc-mirror-message-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 2px;
+}
+
+.vc-mirror-author {
+    font-weight: 600;
+    color: var(--header-primary);
+}
+
+.vc-mirror-timestamp {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.vc-mirror-content {
+    color: var(--text-normal);
+    overflow-wrap: break-word;
+}
+
+.vc-mirror-empty {
+    padding: 8px;
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.vc-mirror-btn.selected {
+    color: var(--interactive-active);
+}
