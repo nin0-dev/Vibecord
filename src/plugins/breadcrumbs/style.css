@@ -18,10 +18,6 @@
     background-color: var(--background-modifier-hover);
 }
 
-.vc-breadcrumb-item:hover .vc-breadcrumb-name {
-    color: var(--header-primary);
-}
-
 .vc-breadcrumb-icon {
     width: 16px;
     height: 16px;
@@ -38,4 +34,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.vc-breadcrumb-item:hover .vc-breadcrumb-name {
+    color: var(--header-primary);
 }
