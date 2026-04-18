@@ -1,0 +1,52 @@
+.vc-nebula-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    background: rgb(0 0 0 / 5%);
+    pointer-events: auto;
+    transition: background 0.2s;
+}
+
+.vc-nebula-container:hover {
+    background: rgb(0 0 0 / 15%);
+}
+
+.vc-nebula-container.right {
+    right: 0;
+}
+
+.vc-nebula-container.left {
+    left: 0;
+}
+
+.vc-nebula-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.vc-nebula-preview {
+    position: absolute;
+    background: var(--background-floating);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 12px;
+    pointer-events: none;
+    z-index: 20;
+    width: 240px;
+    box-shadow: var(--elevation-high);
+    transform: translateY(-50%);
+}
+
+.vc-nebula-preview-author {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.vc-nebula-preview-content {
+    font-size: 0.8rem;
+    color: var(--text-normal);
+    overflow-wrap: break-word;
+}
