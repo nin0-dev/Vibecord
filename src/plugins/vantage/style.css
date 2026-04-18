@@ -1,0 +1,36 @@
+.vc-vantage-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: var(--background-secondary-alt);
+    border-left: 1px solid var(--background-modifier-accent);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    user-select: none;
+}
+
+.vc-vantage-canvas {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.vc-vantage-viewport {
+    position: absolute;
+    left: 0;
+    background: var(--brand-experiment-05n);
+    border: 1px solid var(--brand-experiment);
+    pointer-events: none;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+/* Adjust the messages wrapper to make room for the minimap if needed,
+   but for now we'll just overlay it like VS Code's minimap
+   unless the user prefers otherwise. */
+[class*="messagesWrapper"] {
+    position: relative;
+}
