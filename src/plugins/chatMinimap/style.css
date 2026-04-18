@@ -1,0 +1,25 @@
+.vc-chat-minimap-container {
+    height: 100%;
+    background: var(--background-secondary-alt);
+    border-left: 1px solid var(--background-modifier-accent);
+    border-right: 1px solid var(--background-modifier-accent);
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+}
+
+.vc-chat-minimap-canvas {
+    display: block;
+    cursor: pointer;
+}
+
+/* Ensure the messagesWrapper is a flex container so our minimap can sit next to it */
+[class*="messagesWrapper"] {
+    display: flex;
+    flex-direction: row;
+}
+
+[class*="messagesWrapper"] > [class*="scroller"] {
+    flex: 1;
+}
