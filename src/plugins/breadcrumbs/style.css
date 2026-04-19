@@ -18,6 +18,12 @@
     background-color: var(--background-modifier-hover);
 }
 
+.vc-breadcrumb-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .vc-breadcrumb-item:hover .vc-breadcrumb-name {
     color: var(--header-primary);
 }
@@ -34,8 +40,3 @@
     user-select: none;
 }
 
-.vc-breadcrumb-name {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
